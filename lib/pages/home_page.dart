@@ -26,7 +26,7 @@ class HomePage extends StatelessWidget {
                 isBold: true,
               ),
               BaseText(
-                text: "Temos às terças e quintas verdes",
+                text: "Levando alegria desde 1991",
                 color: Colors.white70,
                 fontSize: 20,
                 isBold: false,

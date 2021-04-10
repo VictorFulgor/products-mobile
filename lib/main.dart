@@ -13,7 +13,7 @@ class MyApp extends StatelessWidget {
       title: 'Produtos',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        primarySwatch: Colors.tealAccent[400],
+        primarySwatch: Colors.green,
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
       routes: {
