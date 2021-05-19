@@ -1,4 +1,4 @@
-import 'package:teste1/models/product.dart';
+import 'package:teste1/core/models/product.dart';
 
 abstract class ProductsAbstractService {
   Future<List<Product>> fetch();

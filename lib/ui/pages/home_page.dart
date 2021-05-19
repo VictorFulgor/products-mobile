@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:teste1/widgets/base_text.dart';
+import 'package:teste1/ui/widgets/base_text.dart';
 
 class HomePage extends StatelessWidget {
   @override
@@ -36,7 +36,7 @@ class HomePage extends StatelessWidget {
               ),
               GestureDetector(
                 onTap: () {
-                  Navigator.pushNamed(context, 'productspage');
+                  Navigator.pushNamed(context, 'products');
                 },
                 child: Container(
                   margin: EdgeInsets.only(bottom: 32),

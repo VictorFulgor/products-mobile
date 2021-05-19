@@ -1,6 +1,6 @@
 import 'package:teste1/data/facade.dart';
-import 'package:teste1/models/product.dart';
-import 'package:teste1/service/abstraction/products_abstract_service.dart';
+import 'package:teste1/core/models/product.dart';
+import 'package:teste1/services/abstraction/products_abstract_service.dart';
 
 class ProductsService extends ProductsAbstractService {
   @override

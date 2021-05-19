@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:teste1/pages/home_page.dart';
-import 'package:teste1/pages/products_page.dart';
+import 'package:teste1/ui/pages/home_page.dart';
+import 'package:teste1/ui/pages/products_page.dart';
 
 void main() {
   runApp(MyApp());
@@ -17,10 +17,9 @@ class MyApp extends StatelessWidget {
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
       routes: {
-        'home': (context) => HomePage(),
-        'productspage': (context) => ProductsPage(),
+        '/': (context) => HomePage(),
+        'products': (context) => ProductsPage(),
       },
-      home: HomePage(),
     );
   }
 }
