@@ -13,6 +13,21 @@ class ProductsProvider extends ChangeNotifier {
     notifyListeners();
   }
 
-  Future<bool> add(Product product) async {}
-  Future<bool> delete(int product) async {}
+  Future<bool> add(Product product) async {
+    bool result = await new ProductsService().add(product);
+
+    if (result) {
+      fetch();
+    }
+
+    return result;
+  }
+
+  Future<void> delete(int id) async {
+    bool result = await new ProductsService().delete(id);
+
+    if (result) {
+      fetch();
+    }
+  }
 }

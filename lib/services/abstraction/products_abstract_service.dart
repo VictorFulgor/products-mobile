@@ -2,7 +2,7 @@ import 'package:teste1/core/models/product.dart';
 
 abstract class ProductsAbstractService {
   Future<List<Product>> fetch();
-  Future<bool> add();
+  Future<bool> add(Product product);
   Future<bool> update();
-  Future<bool> delete();
+  Future<bool> delete(int id);
 }

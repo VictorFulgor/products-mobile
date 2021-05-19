@@ -23,10 +23,18 @@ class ProductsService extends ProductsAbstractService {
   }
 
   @override
-  Future<bool> add() {}
+  Future<bool> add(Product product) async {
+    bool response = await new Facade().addProduct(product);
+
+    return response;
+  }
 
   @override
-  Future<bool> delete() {}
+  Future<bool> delete(int id) async {
+    bool response = await new Facade().deleteProduct(id);
+
+    return response;
+  }
 
   @override
   Future<bool> update() {}
